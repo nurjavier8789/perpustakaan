@@ -1,16 +1,25 @@
 package perpus;
 
+import java.awt.AWTException;
+import java.util.Scanner;
+
 public class run {
-    public static void main(String[] args) {
+
+    public static void main(String[] args) throws AWTException, InterruptedException {
         Siswa siswa = new Siswa();
         Buku buku = new Buku();
         Peminjaman pinjam = new Peminjaman();
+        Petugas petugas = new Petugas();
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Selamat datang di Perpustakaan!");
+        System.out.print("Masuk sebagai? ('S'iswa/'P'etugas)\n> ");
+        String pil = input.next();
         
-        try {
+        if (pil.equalsIgnoreCase("s")) {
             pinjam.prosesPinjam(siswa, buku);
-        } catch (Exception e) {
-            System.out.println("Ups...\nThere's error unexpected\nThat causing the program force close >_<");
-            System.exit(0);
+        } else if (pil.equalsIgnoreCase("p")) {
+            petugas.modePetugas();
         }
     }
 }

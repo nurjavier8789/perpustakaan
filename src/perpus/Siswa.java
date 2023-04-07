@@ -2,15 +2,15 @@ package perpus;
 
 import java.util.ArrayList;
 
-public class Siswa {
-    ArrayList<String> namaSiswa = new ArrayList<String>();
-    ArrayList<String> alamat = new ArrayList<String>();
-    ArrayList<String> telepon = new ArrayList<String>();
-    ArrayList<Boolean> status = new ArrayList<Boolean>(); // true = Sudah Pinjam | false = Belum Pinjam
+public class Siswa implements User {
+    private ArrayList<String> namaSiswa = new ArrayList<String>();
+    private ArrayList<String> alamat = new ArrayList<String>();
+    private ArrayList<String> telepon = new ArrayList<String>();
+    private ArrayList<Boolean> status = new ArrayList<Boolean>(); // true = Sudah Pinjam | false = Belum Pinjam
     
     public Siswa() {
         this.namaSiswa.add("Asep");
-        this.alamat.add("Mars");
+        this.alamat.add("Perlimaan Mars");
         this.telepon.add("081234567890");
         this.status.add(false);
         
@@ -24,13 +24,22 @@ public class Siswa {
         this.telepon.add("083123456789");
         this.status.add(true);
     }
-
+    
     public int getJmlSiswa() {
         return this.namaSiswa.size();
     }
 
-    public String getNamaSiswa(int a) {
+    @Override
+    public String getNama(int a) {
         return this.namaSiswa.get(a);
+    }
+    
+    public String getAlamat(int a) {
+        return this.alamat.get(a);
+    }
+    
+    public String getTelepon(int a) {
+        return this.telepon.get(a);
     }
     
     public boolean getStatus(int a) {

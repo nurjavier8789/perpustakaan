@@ -2,10 +2,10 @@ package perpus;
 
 import java.util.ArrayList;
 
-public class Buku {
-    ArrayList<String> namaBuku = new ArrayList<String>();
-    ArrayList<Integer> stok = new ArrayList<Integer>();
-    ArrayList<Integer> harga = new ArrayList<Integer>();
+public class Buku implements User {
+    private ArrayList<String> namaBuku = new ArrayList<String>();
+    private ArrayList<Integer> stok = new ArrayList<Integer>();
+    private ArrayList<Integer> harga = new ArrayList<Integer>();
     
     public Buku() {
         this.namaBuku.add("Buku ceritaaa");
@@ -20,13 +20,18 @@ public class Buku {
         this.stok.add(4);
         this.harga.add(3000);
     }
-
-    public String getNamaBuku(int a) {
+    
+    @Override
+    public String getNama(int a) {
         return this.namaBuku.get(a);
     }
 
     public int getStok(int a) {
         return this.stok.get(a);
+    }
+    
+    public int getHarga(int a) {
+        return this.harga.get(a);
     }
     
     public int getJmlBuku() {
