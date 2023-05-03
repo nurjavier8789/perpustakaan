@@ -1,6 +1,8 @@
 # Tugas UKL Sekolah
 not cleared yet 😅
 
+**Petugas features for now not available yet**
+
 ## Wait where's the file?
 go to [src/perpus](https://github.com/nurjavier8789/perpustakaan/tree/main/src/perpus), you'll find `.java` file
 
