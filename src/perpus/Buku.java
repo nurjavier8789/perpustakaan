@@ -9,11 +9,11 @@ public class Buku implements User {
     
     public Buku() {
         this.namaBuku.add("Buku ceritaaa");
-        this.stok.add(2);
+        this.stok.add(1);
         this.harga.add(2000);
         
         this.namaBuku.add("Buku Pelajaran");
-        this.stok.add(1);
+        this.stok.add(0);
         this.harga.add(2500);
         
         this.namaBuku.add("Buku Dokumenter");
@@ -34,7 +34,8 @@ public class Buku implements User {
         return this.harga.get(a);
     }
     
-    public int getJmlBuku() {
+    //overload!!
+    public int getStok() {
         return this.namaBuku.size();
     }
     

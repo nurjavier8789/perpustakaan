@@ -4,7 +4,7 @@ public class History {
     public void laporan(Buku buku) {
         System.out.println("\nLIST BUKU");
         System.out.println("| ID |\t| Nama Siswa\t|\t| Stok | | Harga |");
-        for (int i = 0; i < buku.getJmlBuku(); i++) {
+        for (int i = 0; i < buku.getStok(); i++) {
             System.out.println("| " + i + " |\t| " + buku.getNama(i) + " |\t| " + buku.getStok(i) + " |\t| " + buku.getHarga(i) + " |");
         }
     }

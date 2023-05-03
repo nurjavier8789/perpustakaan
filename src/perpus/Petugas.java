@@ -10,6 +10,8 @@ public class Petugas implements User {
     private ArrayList<String> alamat = new ArrayList<String>();
     private ArrayList<String> telepon = new ArrayList<String>();
 
+    private int pilihMenu = 0;
+    
     public Petugas() {
         this.namaKaryawan.add("Cecep");
         this.alamat.add("Jl. Buntu mas No. 69");
@@ -36,6 +38,37 @@ public class Petugas implements User {
         System.out.println("Halo " + getNama(idPetugas) + "!");
         System.out.println("Selamat datang di perpustakaan! (Mode Petugas)");
         System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
+        
+        System.out.println("\n-= MENU =-");
+        System.out.print("1. List Buku\n2. List Siswa\n> ");
+        pilihMenu = input.nextInt();
+        
+        if (pilihMenu == 1) {
+            System.out.println("\n-= LIST BUKU =-");
+            System.out.print("1. Edit\n2. Tambah\n> ");
+            pilihMenu = input.nextInt();
+            
+            if (pilihMenu == 1) {
+                System.out.println("Edit");
+            } else if (pilihMenu == 2) {
+                System.out.println("Tambah");
+            } else {
+                System.out.println("Tidak ada pilihan itu ://");
+            }
+            
+        } else if (pilihMenu == 2) {
+            System.out.println("\n-= LIST SISWA =-");
+            System.out.print("1. Edit\n2. Tambah\n> ");
+            pilihMenu = input.nextInt();
+            
+            if (pilihMenu == 1) {
+                System.out.println("Edit");
+            } else if (pilihMenu == 2) {
+                System.out.println("Tambah");
+            } else {
+                System.out.println("Tidak ada pilihan itu ://");
+            }
+        }
     }
 
     @Override
