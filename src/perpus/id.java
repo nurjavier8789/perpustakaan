@@ -2,7 +2,8 @@ package perpus;
 
 public class id {
 //    Peminjaman pinjam = new Peminjaman();
-    private int idMember, idBook;
+    private int idMember;
+    public int idBook;
     
     public int getIdMember() {
         return idMember;

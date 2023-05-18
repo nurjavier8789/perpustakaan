@@ -73,7 +73,7 @@ public class Peminjaman extends id {
                         } while (buku.getStok(getIdBook()) == 0);
                         
 
-                        if (getIdBook() >= buku.getStok()) {
+                        if (idBook >= buku.getStok()) {
                             System.out.println("Salah");
                         } else {
                             this.idBuku.add(getIdBook());

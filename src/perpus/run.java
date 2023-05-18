@@ -28,6 +28,7 @@ public class run {
                     last = input.next();
                 } else if (pil.equalsIgnoreCase("p")) {
                     System.out.println("Maaf untuk saat ini belum tersedia...");
+//                    petugas.modePetugas(); 
                 } else {
                     System.out.println("\nTidak ada opsinya :D\nBye~");
                 }

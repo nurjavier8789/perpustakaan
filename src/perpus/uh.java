@@ -1,3 +1,9 @@
+/*
+    JUST IGNORE THIS CLASS!! This class is just for make the output more tidy
+
+    ABAIKAN CLASS INI!! Class ini hanya membuat output rapi
+*/
+
 package perpus;
 
 import java.awt.AWTException;
